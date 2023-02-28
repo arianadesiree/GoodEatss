@@ -1,17 +1,12 @@
-import './App.css';
-import Pages from './pages/Pages';
-
+import './components/style.css'
+import React from "react";
 
 function App() {
   return (
-    <div className="App">
-     
-     <h1> Hello World! </h1>
-    
-   <Pages />
 
-    </div>
-  );
+<div> Hello World! </div>
+
+  )
 }
 
 export default App;
