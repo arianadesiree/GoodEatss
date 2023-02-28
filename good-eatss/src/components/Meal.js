@@ -4,16 +4,17 @@ import Mealitem from "./Mealitem"
 
 
 const Meal = () => {
-    const [search, setSearch] = useState(null);
+    const [search, setSearch] = useState();
     const [myMeal, setMeal] = useState();
     const [searchMeal, setSearchMeal] = useState("");
 
+    
         useEffect(() => {
-            const getSearch = async () => {
+            const searchMeal = async () => {
               const response = await axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?=${search}`) 
               
             }
-            getSearch()
+            searchMeal()
           },[])
 
 
@@ -30,7 +31,10 @@ const Meal = () => {
                         </input>
 
                     <div className="container">
+
                         <Mealitem />
+                        
+
                     </div>
 
                     </div>
