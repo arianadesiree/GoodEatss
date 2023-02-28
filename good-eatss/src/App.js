@@ -1,10 +1,11 @@
 import './components/style.css'
 import React from "react";
+import Meal from './components/Meal';
 
 function App() {
   return (
 
-<div> Hello World! </div>
+<Meal />
 
   )
 }

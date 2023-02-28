@@ -1,0 +1,135 @@
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke
+}
+
+.heading h1{
+    color: black;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding-top:2rem;
+    text-align: center;
+    text-shadow: 1px 3px rgba(50,50,70,0.7);
+}
+.heading h3{
+    color: black;
+    text-align: center;
+}
+
+.heading h5{
+    color: rgb(213, 15, 81);
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+.searchBox{
+    text-align: center;
+    margin:2rem;
+   
+}
+.search-bar{
+    width:450px;
+    height:35px;
+    border: bold;
+    outline:none;
+    border-radius: 20px;
+    padding: 0.3rem 1rem;
+}
+.notSearch{
+    font-size: 35px;
+    color: black;
+    font-weight:900;
+}
+.container{
+    width:80%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    width:300px;
+    height:400px;
+    margin:1.5rem;
+    box-shadow: 0 10px 15px rgb(213, 15, 81);
+    box-sizing: border-box;
+    overflow: auto;
+    position:relative;
+}
+.card img{
+    width:100%;
+    
+}
+.card .info{
+    color: black;  
+    text-align: center;
+  }
+ 
+  .card .info h2{
+      margin:0;
+      font-weight: 800;
+      margin-top: 16px;
+      font-size: 35px;
+  }
+  .card .info p{
+    margin: 0;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 8px;
+}
+.card:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    height:0;
+    width:100%;
+    transition:0.2s All;
+}
+.card:hover:before{
+    height: 100%;  
+   
+}
+.card:hover{
+    background: linear-gradient(to bottom,rgb(213, 15, 81),rgb(213, 15, 81));  
+}
+.card .recipe{
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: justify;
+    padding: 0.5rem .5rem;
+    background: linear-gradient(to bottom,rgba(231, 166, 239, 0.7),rgb(213, 15, 81));
+    display: none;
+    transition: 0.2s all;
+}
+
+.card:hover .recipe{
+    display:block;
+}
+.recipe h2{
+    margin-bottom:10px;
+}
+.recipe img{
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.recipe p{
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.recipe a{   
+    display: contents;
+    text-align: right;
+}
