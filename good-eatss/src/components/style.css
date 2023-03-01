@@ -1,4 +1,4 @@
-*{
+* {
     margin:0%;
     padding: 0%;
     box-sizing: border-box;
@@ -17,6 +17,7 @@ body{
     text-align: center;
     text-shadow: 1px 3px rgba(50,50,70,0.7);
 }
+
 .heading h3{
     color: black;
     text-align: center;
@@ -26,6 +27,7 @@ body{
     color: rgb(213, 15, 81);
     text-align: center;
     padding-top: 0.5rem;
+    padding-bottom: 1rem;
 }
 
 .searchBox{
@@ -33,19 +35,22 @@ body{
     margin:2rem;
    
 }
+
 .search-bar{
     width:450px;
     height:35px;
     border: bold;
     outline:none;
-    border-radius: 20px;
-    padding: 0.3rem 1rem;
+    border-radius: 80px;
+    padding: 1rem 1rem;
 }
+
 .notSearch{
     font-size: 35px;
     color: black;
     font-weight:900;
 }
+
 .container{
     width:80%;
     margin:0 auto;
@@ -62,10 +67,12 @@ body{
     overflow: auto;
     position:relative;
 }
+
 .card img{
     width:100%;
     
 }
+
 .card .info{
     color: black;  
     text-align: center;
@@ -77,6 +84,8 @@ body{
       margin-top: 16px;
       font-size: 35px;
   }
+
+
   .card .info p{
     margin: 0;
     font-size: 15px;
@@ -84,6 +93,8 @@ body{
     text-align: center;
     margin-top: 8px;
 }
+
+
 .card:before{
     content:"";
     position:absolute;
@@ -93,13 +104,19 @@ body{
     width:100%;
     transition:0.2s All;
 }
+
+
 .card:hover:before{
     height: 100%;  
    
 }
+
+
 .card:hover{
     background: linear-gradient(to bottom,rgb(213, 15, 81),rgb(213, 15, 81));  
 }
+
+
 .card .recipe{
     position: absolute;
     top:0;
@@ -111,13 +128,18 @@ body{
     transition: 0.2s all;
 }
 
+
 .card:hover .recipe{
     display:block;
 }
+
+
 .recipe h2{
     margin-bottom:10px;
     text-align: center;
 }
+
+
 .recipe img{
     width: 100px;
     height:100px;
@@ -126,10 +148,13 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+
+
 .recipe p{
     font-size: 14px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 .recipe a{   
     display: contents;
     text-align: right;
