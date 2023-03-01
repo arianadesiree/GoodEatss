@@ -7,7 +7,7 @@ import SearchBar from "./SearchBar";
 const Home = () => {
     const [search, setSearch] = useState("");
     const [myMeal, setMeal] = useState();
-    const [searchMeal, setSearchMeal] = useState();
+    const [searchMeal, setSearchMeal] = useState([]);
     const [results, setResults] = useState([]);
     
 //using axios to get meals from api
@@ -17,14 +17,13 @@ const Home = () => {
 
     // if (Event.key=="Enter")
         setSearchMeal(response.data.meals)
-        console.log(response)
+        console.log(response.data.meals)
         }
 
         searchMeal()
         },[search]);
               
-
-        //console.log(searchMeal)
+//console.log(searchMeal)
 
           return (
 
@@ -37,7 +36,7 @@ const Home = () => {
 
                     <div className="container">
                         
-                        <SearchBar />
+                        <SearchBar setSearchMeal={setSearchMeal}/>
                         <MealList searchMeal={searchMeal}/>
 
                     </div>

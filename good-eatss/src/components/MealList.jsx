@@ -2,29 +2,30 @@ import React from "react";
 
 const MealList = (props) => {
 
-    console.log(props)
+    //console.log(props.searchMeal)
 
     return (
         <div className="card">
 
-            {/* {mealArray.map((meal, index) => ( */}
-            <img src={props.data.strMealThumb}></img>
+            {props.searchMeal.map((meal) => (
+            <div className="info" key={meal.strMeal}>
+                <img src={meal.strMealThumb}></img>
+                <h2>{meal.strMeal}</h2>
+                <p>{meal.strArea}</p>
+                
+            </div>          
+            ))}
 
-                <div className="info">
-
-                    <h2>{props.data.strMeal}</h2>
-                    <p>{props.data.strArea}</p>
-
-                </div>
-
-        <div className="recipe">
-
+            {props.searchMeal.map((meal) => (
+         <div className="recipe" key={meal.strMeal}>
             <h2> Recipe </h2>
-            <p>{props.data.strInstructions}</p>
-            <img src={props.data.strMealThumb}></img>
-            <a href={props.data.strYoutube}> Watch Video </a>
+            <p>{meal.strInstructions}</p>
+            <img src={meal.strMealThumb}></img>
+            <a href={meal.strYoutube}> Watch Video </a>
             
-        </div>
+            
+        </div> 
+        ))} 
 
         </div>
     )

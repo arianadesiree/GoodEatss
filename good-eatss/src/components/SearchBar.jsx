@@ -1,32 +1,46 @@
 import React from "react";
 import { useState } from "react";
+import axios from "axios";
 
-const SearchBar = () => {
+const SearchBar = (props) => {
+const initialState = ""
 
-    const [search, setSearch] = useState("");
     
+    const [search, setSearch] = useState(initialState);
+    console.log(search)
 
     // const handleChange = (e) => {
     //     setSearch(e.target.value)
     //     }
 
-    const handleClick = (e) => {
-        setSearch({...search,[e.target.value]: e.target.value})
+    const handleChange = (e) => {
+        setSearch({...search,[""]: e.target.value})
     }
       
+    const searchMeal = async (search) => {
+        console.log(search)
+        const response = await axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`);
+
+
+
+    // if (Event.key=="Enter")
+        props.setSearchMeal(response.data.meals)
+        console.log(response.data.meals)
+        }
+
         return (
             <div className="searchBar">
                         
-            <input type="text" className="search-bar" placeholder="Type Item Here"
+            <input type="text" className="search-bar" placeholder="Type Item Here" id='searchBar'
             //onKeyDown={handleKeyDown}
-            onChange={(e)=>setSearch(e.target.value)}
+            onChange={handleChange}
             value={search}
             //onChange={handleChange}
             //onChange={handleInputChange}
             />
             
             <button type='button' className="searchbtn"
-            onClick={handleClick}> Search </button>
+            onClick={searchMeal}> Search </button>
 
         
 
