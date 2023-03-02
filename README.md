@@ -1,11 +1,11 @@
 # Bone-Apple-Teeth!
 
-What I have created here is an interactive application using React, as well as HTML, and CSS. I also used the API [TheMealDB](https://www.themealdb.com/).
+What I have created here is an interactive application using React, as well as Javscript, CSS, and HTML. I also used the API [TheMealDB](https://www.themealdb.com/). Bone-Apple-Teeth is an interactive site that allows you to search our catalog for international dishes you may try from all around the world. Just search for your poultry type, i.e. chicken, steak, and shrimp, and be amazed at the unique dishes that you can find. As you scroll over a dish, the recipe appears, as well as a link to watch a youtube video explaining how to make the dish.
 
 ### Users:
 This recipe website will be typically used by someone in there late twenties, early forties, male or female who wants to try out new meals during there weeks. You can search anything on the application from quick meals to full on gourmet meals. You can search for recipes on this app and find all that you will need to spruce up your meals during the week.
 
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -35,17 +35,11 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
 If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ### `npm run build` fails to minify
 
