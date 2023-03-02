@@ -1,15 +1,14 @@
 import './components/style.css'
 import React from "react";
-import Home from "./components/Home"
+import Main from './components/Main';
 
 
-function App() {
-  return (
 
-<Home />
+const App = () => {
+    return (
 
+        <Main />
 
-  )
+    )
 }
-
-export default App;
+export default App
