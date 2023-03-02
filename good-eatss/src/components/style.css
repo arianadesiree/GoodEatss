@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+.main {
+    margin: 0%;
+    padding: 0%;
+}
+
 body{
-    background-color: whitesmoke
+    background-color: rgb(248, 244, 248)
 }
 
 .heading h1{
@@ -51,21 +56,32 @@ body{
     font-weight:900;
 }
 
-.container{
-    width:80%;
-    margin:0 auto;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.searchbtn {
+    height: 30px;
+    width: 50px;
 }
+
+.container{
+    width:50%;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+}
+
 .card{
-    width:300px;
-    height:400px;
-    margin:1.5rem;
+    width:350px;
+    height: 450px;
+    margin: 0;
     box-shadow: 0 10px 15px rgb(213, 15, 81);
     box-sizing: border-box;
     overflow: auto;
-    position:relative;
+    position: relative;
+}
+
+.full-card {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
 }
 
 .card img{
@@ -76,6 +92,7 @@ body{
 .card .info{
     color: black;  
     text-align: center;
+    justify-content: center;
   }
  
   .card .info h2{
@@ -83,6 +100,8 @@ body{
       font-weight: 800;
       margin-top: 16px;
       font-size: 35px;
+      text-align: center;
+      justify-content: center;
   }
 
 
@@ -92,11 +111,12 @@ body{
     letter-spacing: 1px;
     text-align: center;
     margin-top: 8px;
+    justify-content: center;
 }
 
 
 .card:before{
-    content:"";
+    
     position:absolute;
     top:0;
     left:0;
@@ -108,12 +128,14 @@ body{
 
 .card:hover:before{
     height: 100%;  
+    justify-content: center;
    
 }
 
 
 .card:hover{
-    background: linear-gradient(to bottom,rgb(213, 15, 81),rgb(213, 15, 81));  
+    background: linear-gradient(to bottom,rgb(213, 15, 81),rgb(213, 15, 81));
+    justify-content: center; 
 }
 
 
@@ -122,15 +144,17 @@ body{
     top:0;
     left:0;
     text-align: justify;
-    padding: 0.5rem .5rem;
     background: linear-gradient(to bottom,rgba(231, 166, 239, 0.7),rgb(213, 15, 81));
     display: none;
     transition: 0.2s all;
+    padding: .5rem;
 }
 
 
 .card:hover .recipe{
-    display:block;
+    display: inline;
+    position: absolute;
+    margin: none;
 }
 
 
@@ -151,11 +175,13 @@ body{
 
 
 .recipe p{
-    font-size: 14px;
+    font-size: 16px;
+    font-style: bold;
+    text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .recipe a{   
     display: contents;
-    text-align: right;
+    font-size: 18px;
 }

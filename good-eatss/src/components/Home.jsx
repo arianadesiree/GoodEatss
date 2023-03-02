@@ -34,10 +34,10 @@ const Home = () => {
                     <h5>Just type below in the search bar a keyword to find your new culinary adventure</h5>
                     </div>
 
-                    <div className="container">
-                        
+                    <div className="container">                      
                         <SearchBar setSearchMeal={setSearchMeal}/>
                         <MealList searchMeal={searchMeal}/>
+                                
 
                     </div>
                     </div>
@@ -45,4 +45,4 @@ const Home = () => {
         )
           }
 
-export default Home;
+export default Home
