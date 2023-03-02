@@ -85,8 +85,8 @@ body{
     display: flex;
     /* grid-template-columns: 33% 33% 33%; */
     flex-wrap: wrap;
-    grid-gap: 2.5rem;
-    padding: 3rem;
+    grid-gap: 3rem;
+    padding: 5rem;
     justify-content: center;
     align-items: center;
     text-align: center;
