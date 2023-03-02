@@ -85,7 +85,7 @@ body{
     display: flex;
     /* grid-template-columns: 33% 33% 33%; */
     flex-wrap: wrap;
-    grid-gap: .5rem;
+    grid-gap: 2.5rem;
     padding: 3rem;
     justify-content: center;
     align-items: center;
@@ -188,6 +188,7 @@ body{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 
 .recipe a{   
     display: contents;
