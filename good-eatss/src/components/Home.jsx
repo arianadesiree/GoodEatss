@@ -27,21 +27,21 @@ const Home = () => {
 
           return (
 
-                <div className="main">
+                <div>
                     <div className="heading">
                         <h1> Bone-apple-teeth! </h1>
                     <h3>Find a beautifully curated new recipe to try from easy, to gourmet!</h3>
                     <h5>Just type below in the search bar a keyword to find your new culinary adventure</h5>
                     </div>
 
-                    <div className="container">                      
+                    <div className="search-container">
                         <SearchBar setSearchMeal={setSearchMeal}/>
-                        <MealList searchMeal={searchMeal}/>
-                                
+                    </div>
 
+                    <div className="meal-container">                      
+                        <MealList searchMeal={searchMeal}/>
                     </div>
-                    </div>
-                
+                </div>
         )
           }
 
