@@ -3,7 +3,6 @@ import MealList from "./MealList";
 import axios from "axios";
 import SearchBar from "./SearchBar";
 import { Link } from "react-router-dom";
-import NavBar from "./NavBar";
 
 
 const Main = () => {
