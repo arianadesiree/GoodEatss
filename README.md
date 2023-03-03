@@ -8,7 +8,7 @@ This recipe website will be typically used by someone in there late twenties, ea
 ## Link
 https://goodeatss.surge.sh/
 
-[![file:///Users/arianajackson/Desktop/recipe.png]
+
 
 ## Getting Started with Create React App
 
