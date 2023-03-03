@@ -16,7 +16,7 @@ const Main = () => {
         const searchMeal = async () => {
         const response = await axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`);
 
-    // if (Event.key=="Enter")
+    
         setSearchMeal(response.data.meals)
         console.log(response.data.meals)
         }

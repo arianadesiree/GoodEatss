@@ -7,11 +7,7 @@ const initialState = ""
 
     
     const [search, setSearch] = useState(initialState);
-    //console.log(search)
 
-    // const handleChange = (e) => {
-    //     setSearch(e.target.value)
-    //     }
 
     const handleChange = (e) => {
         setSearch(e.target.value)
@@ -23,7 +19,7 @@ const initialState = ""
 
 
 
-    // if (Event.key=="Enter")
+ 
         props.setSearchMeal(response.data.meals)
         console.log(response.data.meals)
         }
@@ -32,11 +28,8 @@ const initialState = ""
             <div className="searchBar">
                         
             <input type="text" className="search-bar" placeholder="Type Food Item Here" name='searchBar'
-            //onKeyDown={handleKeyDown}
             onChange={handleChange}
             value={search}
-            //onChange={handleChange}
-            //onChange={handleInputChange}
             />
             
             <button type='button' className="searchbtn"
