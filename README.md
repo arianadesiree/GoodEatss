@@ -8,6 +8,7 @@ This recipe website will be typically used by someone in there late twenties, ea
 ## Link
 https://goodeatss.surge.sh/
 
+<img width="1170" alt="Screenshot 2023-03-02 at 10 20 14 PM" src="https://user-images.githubusercontent.com/22970290/222743406-96f718ee-0547-40dd-8b71-ec457ca39c9a.png">
 
 
 ## Getting Started with Create React App
@@ -39,13 +40,3 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
