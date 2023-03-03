@@ -26,7 +26,7 @@ const Main = () => {
               
 //console.log(searchMeal)
 
-          return (
+          return ( 
 
                 <div>
                     <div className="heading">

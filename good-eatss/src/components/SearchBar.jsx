@@ -27,7 +27,7 @@ const initialState = ""
         props.setSearchMeal(response.data.meals)
         console.log(response.data.meals)
         }
-
+ 
         return (
             <div className="searchBar">
                         
